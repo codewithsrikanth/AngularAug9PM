@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Example-8</title>
+        <script>
+            function F1(){
+                var emps = [
+                    {Eno:101,Ename:"Srikanth",Salary:12345},
+                    {Eno:102,Ename:"Naresh",Salary:52145},
+                    {Eno:103,Ename:"Raju",Salary:25687}];
+                var str = "";
+                for(var i=0;i<emps.length;i++){
+                    str = str+"<tr>";
+                    str = str + "<td>"+emps[i].Eno+"</td>";
+                    str = str + "<td>"+emps[i].Ename+"</td>";
+                    str = str + "<td>"+emps[i].Salary+"</td>";
+                    str = str + "</tr>"
+                }
+                document.getElementById("table1").innerHTML = str;
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Example with Complex JSON</h1>
+        <hr>
+        <button id="b1" onclick="F1()">Show EmpData</button>
+        <hr>
+        <table id="table1" border="1" width="400px"></table>
+    </body>
+</html>

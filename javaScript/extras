@@ -1,0 +1,18 @@
+Array:
+    - An array is a variable whcih can be used to store multiple values into single variable.
+    - Javascript is not a typesafe language so that values can be of different types.
+    - We can assign/access the elements from/to an Array by using "Index" and always the index will start from "Zero".
+    - In Javascript Array is an Object which contains few importent methods those are used to manipulte the Array.
+        - Display()
+        - Add()
+        - Remove()
+        - RemoveAll()
+        - Sort()
+        - Join() etc.
+
+JSON: 
+    - Javascript Object Notation, It is used to represent the data.
+    - It will store the data in key and value pair, where key and value is user-defined.
+    - Example:var student =  {sno:1021,sname:'Srikanth',marks:123};
+    
+    

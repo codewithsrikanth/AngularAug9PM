@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Example-6</title>
+        <script>
+            var courses = ["HTML",125,"CSS","Javascript",false,"Typescript","Angular"];
+            //Display an Element
+            function F1(){
+                var Obj = document.getElementById("list1");
+                //Obj.innerHTML = "<option>"+courses[0]+"</option>"
+                for(var i=0;i<courses.length;i++){
+                    Obj.innerHTML += "<option>"+courses[i]+"</option>";
+                }
+            }
+
+            //Add the element into Array
+            function F2(){
+                var name = document.getElementById("T1").value;
+                courses.push(name);
+                //F1();
+                document.getElementById("T1").value = "";
+            }
+
+            //Remove the data
+            function F3(){
+                var Obj = document.getElementById("list1");
+                courses.splice(Obj.selectedIndex,1);
+                // F1();
+            }
+
+            //Remove the data
+            function F4(){
+                courses.splice();
+                //F1();
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Example with Javascript Array</h1>
+        <hr>
+        <div>
+            <label>Enter course name: </label>
+            <input type="text" id="T1"/>
+            <br>
+            <input type="button" onclick="F1()" value="Display"/>
+            <input type="button" onclick="F2()" value="Add"/>
+            <input type="button" onclick="F3()" value="Remove"/>
+            <input type="button" onclick="F4()" value="Remove All"/>
+            <br><br>
+            <select size="10" id="list1" style="width: 100px;"></select>
+        </div>
+    </body>
+</html>

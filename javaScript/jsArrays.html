@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Example-5</title>
+        <script>
+            function F1(){
+                var AR = ["HTML","CSS","Javascript","Typescript","Angular"];
+                var Obj = document.getElementById("list1");                
+                for(var i=0;i<AR.length;i++){
+                    Obj.innerHTML += "<li>"+AR[i]+"</li>";
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Example with Javascript Arrays</h1>
+        <hr>
+        <input type="button" onclick="F1()" value="Display"/>
+        <br>
+        <ul id="list1"></ul>
+    </body>
+</html>

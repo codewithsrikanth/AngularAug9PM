@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Example-3</title>
+        <style>
+            div{
+                border: 2px solid red;
+                width: 300px;
+                height:100px;
+            }
+        </style>
+        <script>
+            function F1(){
+                //console.log('mouseover');
+                var Obj = document.getElementById("div1");
+                Obj.style.backgroundColor = "black";
+                Obj.style.color = "white";
+            }
+            function F2(){
+                //console.log("mouseout");
+                var Obj = document.getElementById("div1");
+                Obj.style.backgroundColor = "yellow";
+                Obj.style.color = "black";
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Javascript Event Demo App</h1>
+        <div id="div1" onmouseover="F1()" onmouseout="F2()">
+            Dynemic Styles using Javascript
+        </div>
+    </body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Example-6</title>
+        <script>
+            function F1(){
+                var emp = {Eno:101,Ename:"Srikanth",Salary:12345};
+                var str = "Eno is: "+emp.Eno+"<br>";
+                str += "Ename is: "+emp.Ename+"<br>";
+                str += "Salary is: "+emp.Salary;
+                document.getElementById("SP1").innerHTML = str;
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Example with JSON</h1>
+        <hr>
+        <input type="button" onclick="F1()" value="GetData"/>
+        <br><br>
+        <span id="SP1"></span>
+    </body>
+</html>

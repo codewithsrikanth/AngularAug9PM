@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Example-4</title>
+        <script>
+            function F1(){
+                var Obj = document.getElementById("T1");
+                var SPObj1 = document.getElementById("SP1");
+                var SPObj2 = document.getElementById("SP2");
+                SPObj1.innerHTML = "<b>"+Obj.value.toUpperCase()+"</b>";
+                SPObj2.innerHTML ="<b>"+ Obj.value.toLowerCase()+"</b>";
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Example with Key events</h1>
+        <hr><br>
+        <label>Enter any text: </label>
+        <input type="text" id="T1" name="T1" onkeydown="F1()"/>
+        <br>
+        <span id="SP1"></span>
+        <br><br>
+        <span id="SP2"></span>
+    </body>
+</html>
