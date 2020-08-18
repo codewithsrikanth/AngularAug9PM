@@ -1,0 +1,70 @@
+Typescript: Javascript + Datatype
+
+Limitations of Javascript:
+- Javascript is not a type safe programming langauge.
+- It is not a compiler based language.
+- Writing plain JS code will be very difficult.
+- Debugging is also a tadious task for the developer.
+
+Advatnages:
+- It is not a replacement of JS, rather it si not adding any new features to the javascript.
+- The typed javascript is nothing but typescript
+- Typescript = Javascript + Datatype
+- Once if the TS file is compoiled it generates Javascript
+
+Variables:
+    var/let variablename:datatype = value;
+    - var and let are the two keywords which can be used to define the variables.
+    - let is blocked scope variable, becasue it wont impact the value of another block.
+    - Once we define a variable within the block by using let keyword, we can't redeclare it.
+
+Datatypes:
+- It is used to specify what type of value a variable can hold.
+- In typescript we have two types like
+    - Basic Types: Which can hold a single value
+        - number
+        - string
+        - boolean
+    - Complex Types: Which can hold multiple values
+        - Arrays
+        - Tuple
+        - Enum
+
+Control Structres:
+- Based on condition if we want to execute some block of statements
+    - Conditional statements 
+        - Simple if 
+        - If else
+        - If else ladder
+        - Switch   
+    - Loops
+        - for   
+        - while
+        - do while
+        - for..in
+        - for..of
+
+Functions:
+- A function is a reusable block of code which can be called again and again when it requires.
+- In Javascript as it supports OOPS, everything we have to define by using "function" keyword.
+- It is one of the limitation of the Javascript, to overcome that we use OOPS with typescript like
+
+Class:
+    - Define a Class   
+    - Class Properties
+    - Constructor
+    - Methods
+    - Objects
+    - Call the members
+
+OOPS: Any programming is called as an OOPS it supports 4 features   
+    - Encapsulation
+    - Abstraction
+    - Polymorphism
+    - Inheritence
+
+- Class: In TS a class is a datatype which can be having properties and methods.
+- Contructor: A constructor is a sepcial function, which can be used to initilize the data to the class members.
+- We can have only one constructor.
+- To access the class members we use "this" keyword.
+
