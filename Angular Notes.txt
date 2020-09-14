@@ -32,22 +32,24 @@ Unit Testing (Karma, Jasmin and Protractor)
 
 Angular JS	-	1.x
 Angular		-	2+(2 to 9)
-----------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------
 Angular JS 1.X 	-	1.1,1.2,1.3 .... 1.8
 Angular 2.X	-	2,4,5,6,7,8,9 and 10
-Things to be covered in training:
-- Introduction of Angular9
-- Environment Setup
-- Creating First Angular Appliation
-- Folder Structure
-- Javascript Sessions
-- Typescript Sessions
+Concepts to be covered in training:
+- Introduction of Angular10 		
+- Environment Setup		
+- Creating First Angular Appliation	
+- Folder Structure			
+- Javascript Sessions		
+- Typescript Sessions		
 - How to setup Angular in Visual Studio 2019 IDE(Optional) for .Net Developers
 - Angular Building Blocks
 	- Modules
 	- Decorators
 	- Components
+	- Bootstrap Integration
 	- Nesting Components
+	- Nested Module
 	- Data Binding
 	- Sharing the data between the components
 	- Services and Parallel and Series execution
@@ -56,30 +58,29 @@ Things to be covered in training:
 	- SPA Implementation		
 		- Routing 
 		- Depedncy Injuction
-	- Bootstrap Integration
 	- AJAX implmentation with RxJS librabry(Obervables,Subscribe)
 	- Angualr Forms
 		- Template Driven
 		- Model/Reactive Forms
 		- Validations
 	- Authentication and Autherization
-	- Angular Meterial
-	- Unit Testing	
+	- Angular Meterial UI
+	- Unit Testing by using Karma, Jasmin and Protractor	
 	- Angular Life Cycle Hooks
-- Live Project on Angular by having all concepts of Angular 
+- Project on Angular by having all concepts of Angular. 
 - Version History of Angular and it's enhancements.
 - Differences between Angular2+ (Vs) React JS (Vs) Vue JS.
 
-Mean(MangoDB, Express JS, Angular and Node JS) Stack:
+Mean(MangoDB =>  Express JS =>  Angular and Node JS) Stack:
 HTML, CSS, Bootstrap
 Javascript
 Node JS
 Express JS
 Mango DB
 Rest API using Express, Mango and Design Patterns
-Bootstrap
 Type Script
 Angular 
+
 
 MERN(MangoDB, Express JS, React JS and Node JS) Stack:
 HTML, CSS, Bootstrap
@@ -135,12 +136,14 @@ Advatages of Visual Studio Code:
 
 Installing Node.js and NPM:
 - Node.js is a server which will takecare the execution of Angular Applications.
-- If we want to work with Angular9, minimum Node.js version shoud be greater than 4.6
+- If we want to work with Angular10, minimum Node.js version shoud be greater than 4.6
 - NPM stands for "Node Package Manager", It is a repository which contains all the packages for client side application development.
 - Once we install Node.js then NPM will be automatically installed.
 - To check the versions that are installed in our OS we use the following commands like
 	Node.js		-	node -v
 	NPM		-	npm -v
+
+-> R&D on Multiple User Accounts path.
 
 Typescript:
 - It is a superset of Javascript.
@@ -158,7 +161,7 @@ Angular CLI:
 	> ng version
 - To install the Angular CLI we use command like
 	> npm install -g @angular/cli
-----------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------
 Create First Angular Application:
 - To create Angular application we have to follow below steps
 Note: To create an angular appliction by using Angular CLI, we must have npm and Angular CLI installed in the machine.
@@ -177,8 +180,8 @@ Note:
 Step-4: Execute the application
 	> ng serve/ng serve --open
 Once we execute the above command it will open the application in browser with port number i.e. 4200.
-----------------------------------------------------------------------------------------
-Folder Structure of an Angular9 application:
+--------------------------------------------------------------------------------------------------------------
+Folder Structure of an Angular10 application:
 e2e folder: 
 It stands for End to End Testcases. It is not testing functionality, rather it will test the application/monitor at production server. It monitors everything that who logged in into the application, how much time spent in the app, how many pages visits and when loged out that information is tracked by e2e folder.
 
@@ -258,9 +261,8 @@ This file is used for testing purposes in the node.js environment. It also helps
 
 tslint.json:
 This is a tool useful for static analysis that checks our TypeScript code for readability, maintainability, and functionality errors. 
-----------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------
 Javascript:
-
 1995 - Netscape Communication(Brenden Eich)
 1996 - ECMA Script 1.0
 1998 - ECMA Script 2.0
@@ -287,7 +289,7 @@ Google Chrome/Opera	-	V8
 Fire Fox			-	SpiderMoney
 Internet Explorer		-	Chakra
 Edge			-	Chakra Core
-----------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------
 HTML 	- Static web pages
 DHTML 	- HTML + CSS + JS
 
@@ -301,9 +303,10 @@ Note: Writing JS code in <body> is a best practice.
 
 How to create a variables?
 - A variable is a named memory loaction, used to store the value.
-- To create a vraible we use "var".
+- To create a variable we use "var/let".
 - In JS variables are not typesafe, which means we can store any type of value into it.
 - Example: var x = 10;
+
 
 How do we write functions?
 - A function is a reusable block of code, which can be used to execute some logic.
@@ -318,12 +321,12 @@ How to work with Event Handling?
 - JS supports different events like
 	- onclick
 	- onmouseover
-	- onmuseout
+	- onmouseout
 	- onblur
 	- onfocus
 	- onload etc.
-- These events will manipulate the DOM.
-- When event is happen then we are handle that with a function i.e. "Event Handler"
+- These events will manipulate/change the behaviour the DOM.
+- When event is happen then we are handle that with a function i.e. "Event Handler".
 
 How to do typecasting?
 - By default every input from the user wil be treat it as a string based content.
@@ -331,6 +334,7 @@ How to do typecasting?
 - To do that JS provide two methods like
 	- parseInt()
 	- parseFloat()
+	- JSON.Parse() etc.
 
 What is a DOM?
 - DOM stands for Document Object Model.
@@ -712,6 +716,8 @@ Note:
 - Two way data binding is applicable only for <input> and <select> tags.
 - If we want to use input elements/Forms in angular appliction we should include a module i.e. "FormsModule" under the module.ts file.
 ----------------------------------------------------------------------------------------
+codewithsrikanth@gmail.com
+
 Builtin - Directives in Angular:
 - A directive in Angular is used to chnage the behaviour of the DOM(Document Object Model) elements.
 - It is used to add the additional dynemic behaviour to the HTML elements.
@@ -728,6 +734,20 @@ ngClass: It is used to apply the CSS classes dynemically.
 - If we want to apply more than one CSS style for an HTML element we use this approch.
 - <tag [ngClass]="property"></tag>
 ----------------------------------------------------------------------------------------
+Upgrade to latest version of angular in machine?
+Step-1:> npm uninstall -g @angular/cli
+Step-2:> npm cache clear
+Step-3:> npm cache verify
+Step-4:> npm install -g @angular/cli@latest
+
+Bootstrap Integration:
+- To install bootstrap we use "NPM(Node Package Manager)".
+- Open the command prompt -> use the command like "npm install bootstrap".
+- It will download the packages into "node_modules" folder and, package information will be registered under the "package.json" file.
+- Will register in styles.css file like
+	"@import '../node_modules/bootstrap/dist/css/bootstrap.css';"
+
+
 *ngIf:
 - It is a structural directive which can be used to manipluate the DOM elements means dynemically we can add/remove the elements based on the conditions.
 - <tag *ngIf="property"></tag>
@@ -781,7 +801,7 @@ Example:
 - In app.component.html define the root components like
 	Employee and Student
 - In child components will invoke remaing things by specifying selectors.
-----------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------
 Datasharing between the components:
 - To share the data from one component to another component in Angular we have 4 options
 	- @Input()
@@ -790,18 +810,18 @@ Datasharing between the components:
 	- @ViewChildren()
 
 @Input(): This decorator is used to access the data from parent component to child components.
-- At the time of creating properties in child component will define it by using @Input() decorator	@Input() Eno;
+- At the time of creating properties in child component will define it by using @Input() decorator		@Input() Eno;
 	@Input() Ename;
 	@Input() Salary;
 - To work with @Input() and share the data follow the below steps
+	- Create parent component with data
 	- Create the child component and define the properties using @Input()
-	- Create parent component with data.
 	- Map the parent component data with child component properties
 	- Intilize parent component.
 
 @Output(): This decorator is used to share the data from child component to parent component.
 - To work with this we will follow below steps like
-	- Declare the @Output decorator in child component and define an event by using a class i.e. EventEmitter from @angular/core library.
+	- Declare the @Output decorator in child component and define an event by using a class i.e. EventEmitter from "@angular/core" library.
 	- Fire the event from child component template.by using any html control and any event we can use.
 	- From the event handler bind the data to Output decorator property by using a method emit().
 	- Map the event in the parent component.
@@ -813,21 +833,21 @@ Datasharing between the components:
 
 @ViewChildren():
 - It can be used to manipulate multiple components at once.
-----------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------
 Services in Angular:
-- A service is a reusable block of code which can be used across multiple components.
+- A service is a reusable block of code/data which can be used across multiple components.
 - Practically services can be used to implement methods for CRUD operations by using AJAX implmentation.
 - A service in angular is a typescript class, which comes with a decorator "@Injectable()", This decorator is avilable in "@angular/core".
-- This @Injectable() will contain a metadata property i.e. "providedIn:root", the purpose of this property is used to available the property globally.
+- This @Injectable() will contain a metadata property i.e. "providedIn:root", the purpose of this property is used to available the service globally.
 - To create a service we use a CLI command like "ng g service <nameOfService>".
-----------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------
 RestAPI Service Calls:
 - To work with RestAPI, we use a class i.e. "HttpClient" class.
 - This class is avaible under "@angular/common/http".
 - It is continusly make a request to the server, what it gives it will observe., so that the return type of HttpClient is "Observable".
 - This class is avaible in a library i.e. "rxjs", it stands for Reactive Extension Javascript.
 Note: To work with Parallel execution of component we use "Observable" from 'rxjs-compat', becasue it is having a method i.e. "forkJoin([])".
-----------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------
 Pipes in Angular:
 - It is a concept which can be used to process/filter the data before it is rendedrd into the browser.
 - It can be used only interpolation syntax mostly.
@@ -863,15 +883,15 @@ Display data in Grid and applying Pagination, Sorting and Filtering:
 - To work with above functionalities we will use following packages and define Modules in app.module.
 
 - Paging: 
-	> npm install --save ngx-pagination
+	> npm install  ngx-pagination
 	> import {NgxPaginationModule} from 'ngx-pagination'; 
 
 - searching:
-	> npm install --save ng2-search-filter
+	> npm install  ng2-search-filter
 	> import {Ng2SearchPipeModule} from 'ng2-search-filter';
 
 - Sorting:
-	> npm install --save ngx-order-pipe
+	> npm install  ngx-order-pipe
 	> import {OrderModule} from 'ngx-order-pipe';
 
 - Bootstrap:
@@ -972,6 +992,65 @@ Lazy Loading in Angular:
 - But if we want to load the module based on the requirement, then that is called "Lazy loading".
 - This is required only to reduce the intial load time and improve the performence when we have large modules.
 - To implment Lazy loading we use a guard i.e. "CanLoad".
+----------------------------------------------------------------------------------------
+Unit Testing:
+- It is nothing but testing a block of functionality by the developer.
+- If the functionality is executed properly and return the expected value in a proper way then those test cases are pass else it is fail.
+
+Packages for Unit Testing:
+- Jasmine		:	Used to define the Test cases
+- Protractor	:	Used to execute the test cases
+- Karma		:	Used to execute the test cases in different browsers
+
+Karma	=>	Protractor	=>	Jasmin.
+Note: By default Angular7 onwards all the above packages are integrated to the applications.
+----------------------------------------------------------------------------------------
+Angular Meterial: 
+- It is UI level framework, which can be used to create the UI by using Angular and Typescript.
+- To include it we use a library "ng add @angular/material"
+
+Angular Life Cycle Hooks:
+- It is nothing but from creating the component and destroying the component how a component will undergo to different stages.
+- In Component Life cycle hooks we have different stages like
+	
+	- ngOnInit()
+	- constructor
+	- ngOnChnages()
+	- ngDoCheck()
+		- ngAfterContetnInit()
+		- ngAfterContentCheck()
+		- ngAfterViewInit()
+		- ngAfterViewChecked()
+	- ngDestroy()
+
+- ngOnInit(): It is executed whenever the component is initilized.
+- ngOnChange(): It is executed when the component's value gets chnaged.
+- ngDoCheck(): It is sepcified an event, which can be used to identify the chnages explicitly, the action will be executed when we have any deep chnages of component.
+- ngOnDestroy(): When the component is removed from the DOM then this will get executed.
+- constructor: It is used to initilize data to the component.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
